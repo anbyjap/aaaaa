@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="./index.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">    
+    <title>Aizu Cannel</title>
 </head>
 <body>
-
-    <header>
-        <p>Haruki Anbai Studio</p>
-        <ul>
-            <li>home</li>
-            <li>insta</li>
-            <li><a href="https://youtube.com">Youtube</a></li>
-        </ul>
-    </header>
-
-    <div class = "main">
-        <p id = "doc">Love it.<br>Until loves it back.</p>
-        <input type="text">
+    <div class="header">
+        <h1>Aizu Channel</h1>
+        <span><i id="hamburger" class="fa fa-bars" aria-hidden="true" role="navigation"></i></span>
     </div>
 
+    <div id="nav-bar" class="nav-bar">
+        <ul>
+            <li><a href="#">my page</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="search">
+            <input type="search" name="search" id="keyword" placeholder="キーワードを入力">
+            <input type="submit" name="submit" class="fa fa-search" value="&#xf002;" >    
+        </div>
+    
+        <div class="message-wrapper">
+            <div class="message-box">
+                <div class="user-information">
+                    <p>Haruki anbai    2020/7/16/03:38</p>
+                </div>
+                <div class="message">
+                    <h2>Hellooooo.Can you hear me?</h2>
+                </div>
+            </div>
+            <div class="message-box">
+                <div class="user-information">
+                    <p>Shinzo abe    2020/7/16/03:40</p>
+                </div>
+                <div class="message">
+                    <h2>Hiiiii. I can hear you.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>
