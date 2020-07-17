@@ -11,7 +11,8 @@ body{
 
 .header,
 .search,
-.message-wrapper{
+.message-wrapper,
+.input-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,11 +59,14 @@ body{
     padding: 20px;
 }
 
-.message-wrapper{ flex-direction: column;}
+.input-wrapper textarea {padding: 10px;width: 30%;font-size: 20px;}
+.input-wrapper input { padding: 35px;}
+
+.message-wrapper{ flex-direction: column;height: auto;}
 
 .message-box {
     background-color: rgb(84, 80, 80);
-    width: 80%;
+    min-width: 70%;
     padding: 30px;
     margin: 10px;
 }
