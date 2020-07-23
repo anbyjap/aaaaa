@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function(){
 document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('submit').addEventListener('click',function(){
         var input = document.getElementById('input');
+            if(input.value == '') {
+                alert("内容が無いよう");
+                return false;
+            }
         var output = document.getElementById('message-wrapper');
         var div = document.createElement('div');
         var h2 = document.createElement('h2');
@@ -32,5 +36,7 @@ document.addEventListener('DOMContentLoaded',function(){
         div.appendChild(time);
         div.appendChild(h2);
         output.appendChild(div);
+
+        input.value = null;
     });
 });
